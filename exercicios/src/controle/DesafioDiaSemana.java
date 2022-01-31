@@ -16,22 +16,22 @@ public class DesafioDiaSemana {
 	
 		Scanner entrada = new Scanner(System.in);
 		
-		System.out.println("Digite o dia da semana: ");
-		String diaSemana = entrada.nextLine();
+		System.out.print("Digite o dia da semana: ");
+		String diaSemana = entrada.next();
 		
-		if (diaSemana.equals("Domingo")) {
+		if (diaSemana.equalsIgnoreCase("Domingo")) {
 			System.out.println(1);
-		} else if (diaSemana.equals("Segunda")) {
+		} else if (diaSemana.equalsIgnoreCase("Segunda")) {
 			System.out.println(2);
-		} else if (diaSemana.equals("Terça")) {
+		} else if (diaSemana.equalsIgnoreCase("Terça") || diaSemana.equalsIgnoreCase("Terca")) {
 			System.out.println(3);
-		} else if (diaSemana.equals("Quarta")) {
+		} else if (diaSemana.equalsIgnoreCase("Quarta")) {
 			System.out.println(4);
-		} else if (diaSemana.equals("Quinta")) {
+		} else if (diaSemana.equalsIgnoreCase("Quinta")) {
 			System.out.println(5);
-		} else if (diaSemana.equals("Sexta")) {
+		} else if (diaSemana.equalsIgnoreCase("Sexta")) {
 			System.out.println(6);
-		} else if (diaSemana.equals("Sábado")) {
+		} else if (diaSemana.equalsIgnoreCase("Sábado") || diaSemana.equalsIgnoreCase("Sabado")) {
 			System.out.println(7);
 		} else {
 			System.out.println("Dia da semana inválido!");
