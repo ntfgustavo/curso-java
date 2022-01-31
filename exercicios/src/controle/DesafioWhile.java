@@ -23,7 +23,7 @@ public class DesafioWhile {
 			condicao = nota != -1;
 			
 			if (condicao) {
-				if (nota >= 0.0 || nota <= 10.0) {
+				if (nota >= 0.0 && nota <= 10.0) {
 					total += nota;
 					qtdeNotas++;
 				} else {
