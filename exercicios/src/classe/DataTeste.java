@@ -9,14 +9,19 @@ public class DataTeste {
 		data1.mes = 9;
 		data1.ano = 1986;
 		
-		System.out.println(data1.obterDataFormatada());
 		
 		Data data2 = new Data();		
 		data2.dia = 7;
 		data2.mes = 1;
 		data2.ano = 1984;
 		
+		String dataFormatada1 = data1.obterDataFormatada(); 
+		
+		System.out.println(dataFormatada1);
 		System.out.println(data2.obterDataFormatada());
+		
+		data1.imprimirDataFormatada();
+		data2.imprimirDataFormatada();
 		
 	}
 }

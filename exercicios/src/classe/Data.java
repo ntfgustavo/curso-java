@@ -9,8 +9,15 @@ public class Data {
 
 	String obterDataFormatada() {
 		
-		return dia + "/" + mes + "/" + ano;
+		return String.format("%d/%d/%d",  dia, mes, ano);
 		
 	}
+	
+	void imprimirDataFormatada() {
+		
+		System.out.println(obterDataFormatada());
+		
+	}
+	
 	
 }
