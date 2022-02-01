@@ -15,6 +15,8 @@ public class Teste {
 		System.out.println("Valor é " + valor);
 
 		System.out.println(args[0]);
+		
 		entrada.close();
+		
 	}
 }
