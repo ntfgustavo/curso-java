@@ -2,8 +2,8 @@ package classe;
 
 public class Data {
 
-	String dia;
-	String mes;
-	String ano;
+	int dia;
+	int mes;
+	int ano;
 	
 }
