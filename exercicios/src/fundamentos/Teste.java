@@ -17,6 +17,6 @@ public class Teste {
 		System.out.println(args[0]);
 		
 		entrada.close();
-		
+					
 	}
 }
