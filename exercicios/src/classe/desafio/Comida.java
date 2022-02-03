@@ -1,4 +1,4 @@
-package classe;
+package classe.desafio;
 
 public class Comida {
 
