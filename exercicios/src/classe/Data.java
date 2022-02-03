@@ -8,29 +8,30 @@ public class Data {
 
 	Data() {
 	
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+//		dia = 1;
+//		mes = 1;
+//		ano = 1970;
+		this(1, 1, 1970);
 		
 	}
 	
-	Data(int diaInicial, int mesInicial, int anoInicial) {
+	Data(int dia, int mes, int ano) {
 					
-		dia = diaInicial;
-		mes = mesInicial;
-		ano = anoInicial;	
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;	
 		
 	}
 
 	String obterDataFormatada() {
 		
-		return String.format("%d/%d/%d",  dia, mes, ano);
+		return String.format("%d/%d/%d",  this.dia, mes, ano);
 		
 	}
 	
 	void imprimirDataFormatada() {
 		
-		System.out.println(obterDataFormatada());
+		System.out.println(this.obterDataFormatada());
 		
 	}
 	
