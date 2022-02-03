@@ -2,6 +2,16 @@ package classe;
 
 public class Data {
 
+	// Valores padrão para tipos primitivos
+	// byte, short, int, long -> 0
+	// float, double -> 0.0
+	// boolean -> false
+	// char -> '\u0000'
+	// Estes valores padrões não valem para uma variavel local, variavel local não é inicializada.
+	
+	// Objetos -> null
+	
+	
 	int dia;
 	int mes;
 	int ano;
@@ -13,7 +23,13 @@ public class Data {
 //		ano = 1970;
 		this(1, 1, 1970);
 		
+//		int a;
+//		
+//		a = 0;
+//		System.out.println(a);
+		
 	}
+	
 	
 	Data(int dia, int mes, int ano) {
 					
