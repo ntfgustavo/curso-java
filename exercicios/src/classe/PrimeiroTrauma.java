@@ -2,13 +2,15 @@ package classe;
 
 public class PrimeiroTrauma {
 
-	int a = 3; // Não pode mexer aqui!
+	int a = 3;
+	static int b = 4; 
 	
 	public static void main(String[] args) {
 		
-		// Pode mexer aqui
-		System.out.println(new PrimeiroTrauma().a);
-		// Pode mexer aqui
+		PrimeiroTrauma p = new PrimeiroTrauma();
+		System.out.println(p.a);
+		
+		System.out.println(b);
 		
 	}
 }
