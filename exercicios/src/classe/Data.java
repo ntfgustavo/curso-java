@@ -25,7 +25,8 @@ public class Data {
 
 	String obterDataFormatada() {
 		
-		return String.format("%d/%d/%d",  this.dia, mes, ano);
+		final String formato = "%d/%d/%d";
+		return String.format(formato,  this.dia, mes, ano);
 		
 	}
 	
