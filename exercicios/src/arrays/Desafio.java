@@ -9,31 +9,26 @@ public class Desafio {
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		System.out.print("Informe a quantidade de notas: ");
+		System.out.print("Quantas notas: ");
+		
 		int qtdeNotas = entrada.nextInt();
 		
 		double[] notas = new double[qtdeNotas];
 				
 		for(int i = 0; i < notas.length; i++) {
-			System.out.printf("Informe a nota %d: ", i + 1);
+			System.out.print("Informe a nota " + (i + 1) + ": ");
 			notas[i] = entrada.nextDouble();
 		}
 		
-		double totalNotas = totalNotas(notas);		
+		double total = 0;	
+		for(double nota : notas) {
+			total += nota;
+		}
 		
-		System.out.printf("A média das notas é: %.2f", totalNotas / qtdeNotas);
+		double media = total / notas.length;
+		System.out.println("A média é " + media + "!");
 		
 		entrada.close();
 	}
 	
-	static double totalNotas(double[] notas) {
-		
-		double totalNotas = 0;
-		
-		for(double nota : notas) {
-			totalNotas += nota;
-		}	
-		
-		return totalNotas;
-	}
 }
