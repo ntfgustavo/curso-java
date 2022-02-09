@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Cliente {
 
-	String nome;
-	List<Compra> compras = new ArrayList<Compra>();
+	final String nome;
+	final List<Compra> compras = new ArrayList<Compra>();
 	
 	Cliente(String nome) {
 		this.nome = nome;
@@ -25,4 +25,5 @@ public class Cliente {
 		
 		return total;
 	}
+	
 }
