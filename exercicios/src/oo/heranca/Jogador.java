@@ -2,11 +2,11 @@ package oo.heranca;
 
 public class Jogador {
 
-	int vida = 100;
-	int x;
-	int y;
+	public int vida = 100;
+	public int x;
+	public int y;
 		
-	Jogador(int x, int y) {
+	protected Jogador(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}

@@ -10,17 +10,17 @@ public class Monstro extends Jogador {
 		super(x, y);
 	}
 	
-	public void setX(int x) {
-		super.x = x;
-	}
-	
-	public void setY(int y) {
-		super.y = y;
-	}
-	
-	public int getVida() {
-		return super.vida;
-	}
+//	public void setX(int x) {
+//		super.x = x;
+//	}
+//	
+//	public void setY(int y) {
+//		super.y = y;
+//	}
+//	
+//	public int getVida() {
+//		return super.vida;
+//	}
 	
 	public boolean atacar (Jogador oponente) {
 		boolean ataque = super.atacar(oponente);

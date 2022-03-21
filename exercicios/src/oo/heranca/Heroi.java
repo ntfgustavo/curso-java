@@ -6,10 +6,11 @@ public class Heroi extends Jogador {
 		super(x, y);
 	}
 	
-	public int getVida() {
-		return super.vida;
-	}
+//	public int getVida() {
+//		return super.vida;
+//	}
 	
+	@Override
 	public boolean atacar(Jogador oponente) {
 		boolean ataque1 = super.atacar(oponente);
 		boolean ataque2 = super.atacar(oponente);
