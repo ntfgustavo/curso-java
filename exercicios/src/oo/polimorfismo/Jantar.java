@@ -6,18 +6,18 @@ public class Jantar {
 		
 		Pessoa convidado = new Pessoa(99.65);
 		
-		Comida arroz = new Arroz(0.2);
-		Comida feijao = new Feijao(0.1);
+		Arroz ingrediente1 = new Arroz(0.2);
+		Feijao ingrediente2 = new Feijao(0.1);
 		
 		System.out.println(convidado.getPeso());
 		
-		convidado.comer(arroz);
-		convidado.comer(feijao);		
+		convidado.comer(ingrediente1);
+		convidado.comer(ingrediente2);		
 		System.out.println(convidado.getPeso());
 		
-		Comida sorvete = new Sorvete(0.4);
+		Sorvete sobremesa = new Sorvete(0.4);
 		
-		convidado.comer(sorvete);		
+		convidado.comer(sobremesa);		
 		System.out.println(convidado.getPeso());
 	}
 	
