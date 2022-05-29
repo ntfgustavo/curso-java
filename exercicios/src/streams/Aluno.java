@@ -16,5 +16,14 @@ public class Aluno {
 		this.bomComportamento = bomComportamento;
 	}
 	
+	@Override
+	public String toString() {	
+		return nome + " tem nota " + nota;
+	}
+	
+//	@Override
+//	public int hashCode() {	
+//		return 1;
+//	}
 	
 }
