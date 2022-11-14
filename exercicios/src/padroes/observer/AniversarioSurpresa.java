@@ -13,6 +13,7 @@ public class AniversarioSurpresa {
 			System.out.println("Surpresa via lambda!");
 			System.out.println(e.getMomento());			
 		});
+		
 		porteiro.monitorar();
 		
 	}
