@@ -7,9 +7,9 @@ import java.util.function.Predicate;
 
 public class Tabuleiro implements CampoObservador {
 
-	private int linhas;
-	private int colunas;
-	private int minas;
+	private final int linhas;
+	private final int colunas;
+	private final int minas;
 	
 	private final List<Campo> campos = new ArrayList<>();
 //	private final List<Consumer<Boolean>> observadores = new ArrayList<>();
@@ -24,6 +24,10 @@ public class Tabuleiro implements CampoObservador {
 		associarVizinhos();
 		sortearMinas();
 		
+	}
+	
+	public void paraCadaCampo(Consumer<Campo> funcao) {
+		campos.forEach(funcao);
 	}
 	
 //	public void registrarObservadores(Consumer<Boolean> observador) {
@@ -86,6 +90,14 @@ public class Tabuleiro implements CampoObservador {
 	public void reiniciar() {
 		campos.stream().forEach(c -> c.reiniciar());
 		sortearMinas();
+	}
+	
+	public int getLinhas() {
+		return linhas;
+	}
+
+	public int getColunas() {
+		return colunas;
 	}
 
 	@Override
