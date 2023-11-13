@@ -3,7 +3,6 @@ package padroes.observer;
 import java.util.Date;
 
 public class EventoChegadaAniversariante {
-
 	
 	private final Date momento;
 
@@ -14,7 +13,5 @@ public class EventoChegadaAniversariante {
 	public Date getMomento() {
 		return momento;
 	}
-	
-	
-	
+
 }
