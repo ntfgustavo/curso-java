@@ -22,6 +22,5 @@ public class CriarTabelaPessoas {
 		conexao.close();
 		
 	}
-	
-	
+		
 }
