@@ -9,7 +9,9 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-BancoDeDados.txt
+
+#Banco de Dados
+bd/
 
 # External tool builders
 .externalToolBuilders/
