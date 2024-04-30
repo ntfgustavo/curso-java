@@ -10,6 +10,9 @@ local.properties
 .loadpath
 .recommenders
 
+#Banco de Dados
+bd/
+
 # External tool builders
 .externalToolBuilders/
 
