@@ -1,4 +1,4 @@
-package teste.basico;
+package modelo.basico;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
