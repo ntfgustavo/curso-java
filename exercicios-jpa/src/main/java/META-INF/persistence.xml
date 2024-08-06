@@ -21,6 +21,8 @@
 		<class>modelo.heranca.desafio.Pessoa</class>
 		<class>modelo.heranca.desafio.ClienteDesafio</class>
 		<class>modelo.heranca.desafio.UsuarioDesafio</class>
+		<class>modelo.heranca.Aluno</class>
+		<class>modelo.heranca.AlunoBolsista</class>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.drive" value="com.mysql.cj.jdbc.Driver"/>
