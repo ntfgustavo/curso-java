@@ -18,6 +18,9 @@
 		<class>modelo.composicao.Endereco</class>
 		<class>modelo.composicao.Fornecedor</class>
 		<class>modelo.composicao.Funcionario</class>
+		<class>modelo.heranca.desafio.Pessoa</class>
+		<class>modelo.heranca.desafio.ClienteDesafio</class>
+		<class>modelo.heranca.desafio.UsuarioDesafio</class>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.drive" value="com.mysql.cj.jdbc.Driver"/>
