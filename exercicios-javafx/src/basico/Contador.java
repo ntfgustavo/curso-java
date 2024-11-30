@@ -13,6 +13,22 @@ public class Contador extends Application {
 
 	private int contador = 0;
 	
+	private void atualizaLabelNumero(Label label) {
+		
+		label.setText(Integer.toString(contador));
+		
+		label.getStyleClass().remove("verde");
+		label.getStyleClass().remove("vermelho");
+		
+		if (contador > 0) {
+			label.getStyleClass().add("verde");
+		} else if (contador < 0) {
+			label.getStyleClass().add("vermelho");
+		}
+		
+	}
+	
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 	
@@ -25,14 +41,14 @@ public class Contador extends Application {
 		botaoDecremento.getStyleClass().add("botoes");
 		botaoDecremento.setOnAction(e -> {
 			contador--;
-			labelNumero.setText(Integer.toString(contador));
+			atualizaLabelNumero(labelNumero);
 		});
 		
 		Button botaoIncremento = new Button("+");
 		botaoIncremento.getStyleClass().add("botoes");
 		botaoIncremento.setOnAction(e -> {
 			contador++;
-			labelNumero.setText(Integer.toString(contador));
+			atualizaLabelNumero(labelNumero);
 		});
 		
 		HBox boxBotoes = new HBox();
